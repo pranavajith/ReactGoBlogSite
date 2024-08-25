@@ -1,0 +1,51 @@
+/* App.css */
+.container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .scrollable-content {
+    flex: 1;
+    overflow-y: scroll;
+    height: 100vh;
+   
+  }
+  
+  .scrollable-content::-webkit-scrollbar {
+    width: 15px; 
+  }
+  
+  .scrollable-content::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+  
+  .scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #e8e7e7;
+    border-radius: 10px; 
+    border: 2px solid #ffffff; 
+  }
+  
+  .scrollable-content::-webkit-scrollbar-thumb:hover {
+    background-color: #9a9a9a; 
+  }
+  
+  .scrollable-content::-webkit-scrollbar-button {
+    display: none; 
+  }
+  
+  .fixed-content {
+    width: 35%; /* Set a fixed width for the fixed component */
+    position: sticky;
+    top: 0; /* Sticks the component to the top */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f4; /* Optional background color */
+    padding: 10px; /* Optional padding */
+  }
+  
+  .text-in-scroll {
+    margin-left: 2%;
+  }
+
+  .text-in-fixed {
+    margin-left: 2%;
+  }
