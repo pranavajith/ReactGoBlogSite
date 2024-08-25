@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { ScrollableComponent, FixedComponent } from "./components/bodyComponents";
+import BlogContainer from "./components/BlogContainer";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import './styles/bodyComponents.css';
 
 function App() {
+
+  const scrollContent = {
+    data: "Hello!"
+  }
+
+  const fixedContent = {
+    data: "Hello2!"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header userData={null}/>
+    <div className = "container">
+      <ScrollableComponent content = {scrollContent}/>
+      <FixedComponent content = {fixedContent}/>
     </div>
+    <Footer />
+    </>
   );
 }
 

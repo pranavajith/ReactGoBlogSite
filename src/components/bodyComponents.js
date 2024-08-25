@@ -5,7 +5,7 @@ const ScrollableComponent = ({content}) => {
     return (
       <div className="scrollable-content">
         <div className="text-in-scroll">
-        {content.data}
+        {content?.data}
         </div>
         
       </div>
@@ -17,7 +17,7 @@ const ScrollableComponent = ({content}) => {
     return (
       <div className="fixed-content">
         <div className="text-in-fixed">
-        {content.data}
+        {content?.data}
         </div>
       </div>
     );
