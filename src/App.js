@@ -12,7 +12,7 @@ function App() {
 
   const fixedContent = {
     data: "Hello2!"
-  }
+  } 
 
   return (
     <>
